@@ -9,8 +9,8 @@ public class CountDaysWithoutMeetings{
         int days = 10;
         int result = resultNotOptimized(days, meetings);
         int resultOptimized = resultOptimized(days, meetings);
-        System.out.println(result);
-    }
+        System.out.println("Not Optimized Result: " + result);
+        System.out.println("Optimized Result: " + resultOptimized);}
 
     private static int resultNotOptimized(int days, int[][] meetings) {
        int[] set=new int[days+1];
