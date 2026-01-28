@@ -48,8 +48,8 @@ public class MaximumLevelSumBinaryTree {
             }
 
             level++;
-            
+
         }
         return maxLevel;
-    }
+    }   
 }
