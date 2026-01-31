@@ -104,8 +104,10 @@ public class MinimumPathSum {
         }
 
         // Fill rest of the table
+        // Iterate through each row starting from the second row
         for (int i = 1; i < m; i++) {
             dp[0] += grid[i][0]; // Update first column for current row (only down moves)
+            // Update the rest of the columns
             for (int j = 1; j < n; j++) {
                 dp[j] = grid[i][j] + Math.min(dp[j], dp[j - 1]);// Choose the minimum path from top(dp[j]) or left(dp[j-1])
             }
